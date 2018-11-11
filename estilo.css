@@ -9,6 +9,7 @@ body{
 	font-family: Arial, Helvetica, sans-serif;
 }
 
+
 .cabecalho{
 	background-color: #57BCFF;
 	margin-top: 5px;
@@ -116,21 +117,11 @@ h1{
 	padding: 10px 20px;
 	margin: 0px 15px;
 }
-
 /* ----- Seção Serviços ----- */
 .servicos {
 	background: rgba(255, 255, 255, 0.5);
 	border-radius: 50px;
 	margin-top: 50px;
-	margin-bottom: 50px;
-
-}
-
-.textocentralizado{
-	font-size: 16px;
-	margin-top: 50px;
-	margin-right: 30px;
-	margin-left: 30px;
 	margin-bottom: 50px;
 }
 
@@ -142,7 +133,13 @@ h1{
 	transition: background 0.4s;
 }
 
-
+.textocentralizado{
+	font-size: 16px;
+	margin-top: 50px;
+	margin-right: 30px;
+	margin-left: 30px;
+	margin-bottom: 50px;
+}
 /* ----- Rodapé ----- */
 footer{
 	position: bottom;
@@ -154,29 +151,7 @@ footer{
 	padding: 5px 5px 5px 5px;
 }
 
-.texto-rodape{
-	font-size: 10px;
-	display: block;
-	margin-right: auto;
-	margin-left: auto;
-}
-
-.centralizacaoicones{
-	margin-top: 0px;
-	margin-bottom: 0px;
-	display: block;
-	margin-right: auto;
-	margin-left: auto;
-}
-
-.centralizacaoicones:hover{
-	background: rgba(0, 0, 0, 0.5);
-	margin-top: 0px;
-	margin-bottom: 0px;
-	display: block;
-	margin-right: auto;
-	margin-left: auto;
-}
+.texto-rodape{ font-size: 10px;}
 
 .quemsomos {
 	background: rgba(255, 255, 255, 0.5);
@@ -227,5 +202,4 @@ footer{
 	font-weight: bolder;
 	color: white;
 	transition: background 0.4s;
-
 }

@@ -89,30 +89,14 @@
       </div>
     </div>
 
-          <!-- Rodapé -->
-          <footer>
-            <div class="container">
-              <div class="col-md-6 col-lg-6 col-6 col-sm-6 texto-rodape">
-                Todos os Direitos Reservados &#174
-              </div>
-
-              <div class="col-md-2 col-lg-2 col-2 col-sm-2">
-                <!--Facebook-->
-                <img src="img/fbicon.png" class="img-responsive centralizacaoicones">
-              </div>
-
-              <div class="col-md-2 col-lg-2 col-2 col-sm-2">
-                <!--Instagram-->
-                <img src="img/instaicon.png" class="img-responsive centralizacaoicones">
-              </div>
-
-              <div class="col-md-2 col-lg-2 col-2 col-sm-2">
-                <!--Twitter-->
-                <img src="img/twiticon.png" class="img-responsive centralizacaoicones">
-              </div>
-            </div>
-          </footer>
-          <!-- Rodapé -->
+    <!--Rodapé-->
+    <footer>
+      <div class="container">
+        <div class="texto-rodape"> Todos os Direitos Reservados &#174 </div>
+        <div><img src="img/fbicon.png">&emsp;|&emsp;<img src="img/instaicon.png">&emsp;|&emsp;<img src="img/twiticon.png"></div>
+      </div>
+    </footer> 
+    <!--Rodapé-->
     
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>

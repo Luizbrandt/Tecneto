@@ -1,100 +1,56 @@
 <!DOCTYPE php>
 <php lang="pt-br">
+  
   <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-    <title>Tecneto - Tecnologia a um neto de você!</title>
-    <link rel="icon" href="img/icone.png">
-    
-    <!-- Bootstrap -->
-    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
-    <link href="estilo.css" rel="stylesheet">
-    <!-- jQuery -->
-    <script src="jquery-3.3.1.js"></script>
-    
-    <script type="text/javascript">
-      
-      /*
-      $(document).ready(function() 
-      {
-          $("#btncad").click(function() 
-          {
-             $('php, body').animate(
-             {
-                scrollTop: $("#cadastro").offset().top
-             }, 2000);
-          });
-      });
-      */
-    </script>
-
-    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
-      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-    <![endif]-->
+    <meta charset="utf-8">                                                <!--Codificação de caracteres do idioma "Português"-->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">                 <!--Tag de compatibilidade para Microsoft Edge-->
+    <meta name="viewport" content="width=device-width, initial-scale=1">  <!--Definição de tamanho e escala de exibição-->
+    <title>Tecneto - Tecnologia a um neto de você!</title>                <!--Título: O que aparece escrito na aba-->
+    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">        <!--Tag de referência - carregamento do BOOTSTRAP min-->
+    <link href="estilo.css" rel="stylesheet">                             <!--Estilo CSS definido pelo desenvolvedor-->
   </head>
+
   <body>
 
-    <!-- BarraNavegaciones -->
+    <!--Barra de Navegação-->
     <nav class="navbar navbar-default navbar-fixed-top">
       <div class="container">
-
         <div class="navbar-header">
           <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#barra-navegacao">
-            <span class="sr-only">Alternar Menu</span>
+            <span class="sr-only"></span>
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
+          
           <a href="home.php" class="navbar-brand"><img src="img/logopc.png"></a>
-        </div>
-
-        <div class="collapse navbar-collapse" id="barra-navegacao">
-          <ul class="nav navbar-nav navbar-right">
-            <li class="onde-estou"><a href="home.php">Home</a></li>
-            <li><a href="empresa.php">Empresa</a></li>
-            <li><a href="clientes.php">Clientes</a></li>
-            <li><a href="cadastro.php">Cadastre-se</a></li>
-            <li><a href="login.php">Login</a></li>
-            
-            <!-- <li class="dropdown">
-              <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-              Minha Conta <span class="caret"></span>
-              </a>
               
-              <ul class="dropdown-menu">
-                <li><a href="#">Configurações</a></li>
-                <li><a href="#">Logout</a></li>
+          </div>
+            <div class="collapse navbar-collapse" id="barra-navegacao">
+              <ul class="nav navbar-nav navbar-right">
+                <li class="onde-estou"><a href="home.php">Home</a></li>
+                <li><a href="empresa.php">Empresa</a></li>
+                <li><a href="clientes.php">Clientes</a></li>
+                <li><a href="cadastro.php">Cadastre-se</a></li>
+                <li><a href="login.php">Login</a></li>
               </ul>
-            </li>
-          -->
-
-          </ul>
-        </div>
-
+            </div>
       </div>
     </nav>
+    <!--Barra de Navegação-->
     
     <br>
     <br>
     <br>
 
     <div class="container">
-
-      <div class="page-header cabecalho col-md-12 col-lg-12">
-          <img src="img/logocabec.png" class="img-responsive cabecalho">
-      </div>
+        <div class="page-header cabecalho col-md-12 col-lg-12">
+            <img src="img/logocabec.png" class="img-responsive cabecalho">
+        </div>
 
       <div class="capa">
         <div class="texto-capa">
-          <div class="col-md-12 col-lg-12">
-            <img src="img/textocapa.png" class="img-responsive centralizacao">
-          </div>
-          <br>
+          <div class="col-md-12 col-lg-12"><img src="img/textocapa.png" class="img-responsive centralizacao"></div><br>
           <a href="empresa.php" class="btn btn-custom btn-lg">Quem Somos</a>
           <a href="cadastro.php" class="btn btn-custom btn-lg">Cadastre-se</a>
         </div>
@@ -103,26 +59,21 @@
       <br><br><br>
 
           <div class="row servicos">
-            <div class="col-md-3 col-lg-3">
-              <img src="img/android.png" class="img-responsive conteudo-centralizado-right">
-            </div>
-
+            <div class="col-md-3 col-lg-3"><img src="img/android.png" class="img-responsive conteudo-centralizado-right"></div>
             <div class="col-md-9 col-lg-9">
-              <p class="text-justify textocentralizado">
+            <p class="text-justify textocentralizado">
                 Está com dificuldade de interagir com smartphones, tablets e outros dispositivos eletrônicos? Seu neto pode te ajudar a desmistificar os segredos desses aparelhos um tanto quanto estranhos!
-              </p>
+            </p>
             </div> 
           </div><!--ROW-->
 
           <div class="row servicos">
             <div class="col-md-9 col-lg-9">
-              <p class="text-justify textocentralizado">
+            <p class="text-justify textocentralizado">
                 Quer dividir aqueles momentos especiais com os amigos, familiares e conhecidos nas redes sociais, mas não entende essa dinâmica de troco likes ou sigo de volta? Não tem problema! Seu neto pode, e vai te ensinar como aumentar os seguidores e usar todos os filtros possíveis, para sua foto ficar incrível.
-              </p>
+            </p>
             </div>
-            <div class="col-md-3 col-lg-3">
-              <img src="img/instagram.png" class="img-responsive conteudo-centralizado-left">
-            </div>
+            <div class="col-md-3 col-lg-3"><img src="img/instagram.png" class="img-responsive conteudo-centralizado-left"></div>
           </div><!--ROW-->
 
           <div class="row servicos">
@@ -179,32 +130,16 @@
 
     <br><br><br><br><br>
 
+    <!--Rodapé-->
     <footer>
       <div class="container">
-        <div class="col-md-6 col-lg-6 col-6 col-sm-6 texto-rodape">
-          Todos os Direitos Reservados &#174
-        </div>
-
-        <div class="col-md-2 col-lg-2 col-2 col-sm-2">
-          <!--Facebook-->
-          <img src="img/fbicon.png" class="img-responsive centralizacaoicones">
-        </div>
-
-        <div class="col-md-2 col-lg-2 col-2 col-sm-2">
-          <!--Instagram-->
-          <img src="img/instaicon.png" class="img-responsive centralizacaoicones">
-        </div>
-
-        <div class="col-md-2 col-lg-2 col-2 col-sm-2">
-          <!--Twitter-->
-          <img src="img/twiticon.png" class="img-responsive centralizacaoicones">
-        </div>
+        <div class="texto-rodape"> Todos os Direitos Reservados &#174 </div>
+        <div><img src="img/fbicon.png">&emsp;|&emsp;<img src="img/instaicon.png">&emsp;|&emsp;<img src="img/twiticon.png"></div>
       </div>
-    </footer>
+    </footer> 
+    <!--Rodapé-->
     
-    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-    <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="bootstrap/js/bootstrap.min.js"></script>
 
   </body>
