@@ -1,12 +1,10 @@
 <?php
 
-
 	require_once('db.class.php');	
 
 	$usuario = $_POST['nome'];
 	$email = $_POST['email'];
 	$senha = md5($_POST['senha']);
-	//saldo inicial de novos users de '75.00' passado diretamente a função de insert
 
 	//variável que recebe os dados tratados pelo PHP e cria a instância (linha) da nossa 'table'
 	$objDb = new db();
@@ -31,7 +29,7 @@
 	if($emailexiste) die();
 
 	//inserção dos campos na table - registro de novo usuário
-	$sql = " insert into usuarios (usuario,email,senha,saldo) values ('$usuario','$email','$senha', 75.00) ";
+	$sql = " insert into usuarios (usuario,email,senha) values ('$usuario','$email','$senha') ";
 
 	//execução da query
 	if(mysqli_query($link,$sql)){

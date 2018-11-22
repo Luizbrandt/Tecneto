@@ -48,6 +48,39 @@
 
           if(campo_vazio) return false;
         })
+
+        $('#btn_post').click(function(){
+
+          if($('#texto_post').val().length > 0){
+            
+            //a função 'ajax' permite fazer a requisição dos dados do nosso input sem que haja um 'refresh' na tela
+            //já a função serialize permite a requisição para formulários inteiros por meio de um Json, o que facilita muito quando trabalhamos com formulários muito grandes (grande quantidade de campos)
+            //recuperação de dados de formulário para submissão via ajax
+            $.ajax({
+              url: 'inclui_post.php',
+              method: 'post',
+              data: $('#form_post').serialize(),
+              success: function(data) {
+                $('#texto_post').val(''); //Limpa o campo de post após a postagem
+                alert('Post concluído com sucesso! :)');
+              }
+            })
+
+          }
+        });
+
+        function atualizaPost(){
+          $.ajax({
+            url: 'get_post.php',
+            success: function(data){
+              //JavaScript - função 'html' - semelhante (quase igual) à inner no JavaScript
+              $('#posts').html(data);
+            }
+          });
+        }
+
+        atualizaPost();
+
       });
     </script>
   </head>
@@ -106,62 +139,47 @@
                   <br/>
                   <label>E-mail:</label>
                   <?=$_SESSION['email']?>
-                  <br/>
-                  <label>Saldo:</label>
-                  <?=$_SESSION['saldo']?>
                 </p>
             </div>
           </div>
 
           <div class="row">
-            <div class="col-12 col-sm-4 col-md-4 col-lg-4">
-                <p class="text-center quemsomos">
-                  <img src="img/android.png" class="img-responsive centralizacao">
-                  <b>Serviço:</b> Aula Android Starter 2h <br/>
-                  <b>Preço:</b> R$ 25,00 <br/><br/>
-                  <button id="prchsandroid">Comprar</button>
-                </p>
+            <div class="col-12 col-sm-12 col-md-3 col-lg-3">
+              <div class="panel panel-default">
+                <div class="panel-body">
+                  Postagens: 1
+                </div>
+              </div>
             </div>
 
-            <div class="col-12 col-sm-4 col-md-4 col-lg-4">
-                <p class="text-center quemsomos">
-                  <img src="img/netflix.png" class="img-responsive centralizacao">
-                  <b>Serviço:</b> Aula Netflix Starter 2h <br/>
-                  <b>Preço:</b> R$ 25,00 <br/><br/>
-                  <button id="prchsandroid">Comprar</button>
-                </p>
+            <div class="col-12 col-sm-12 col-md-6 col-lg-6">
+              <div class="panel panel-default">
+                <div class="panel-body">
+                  <form id="form_post" class="input-group">
+                    <input type="text" id="texto_post" name="texto_post" class="form-control" placeholder="Digite aqui! :)" maxlength="140">
+                    <span class="input-group-btn">
+                      <button class="btn btn-default" id="btn_post" type="button">Post</button>
+                    </span>
+                  </form>
+                </div>
+              </div>
+
+
+              <div id="posts" class="list-group">
+                
+              </div>
+            
+
             </div>
 
-            <div class="col-12 col-sm-4 col-md-4 col-lg-4">
-                <p class="text-center quemsomos">
-                  <img src="img/spotify.png" class="img-responsive centralizacao">
-                  <b>Serviço:</b> Aula Spotify Starter 2h <br/>
-                  <b>Preço:</b> R$ 25,00 <br/><br/>
-                  <button id="prchsandroid">Comprar</button>
-                </p>
-            </div>
-          </div>
-
-          <div class="row">
-            <div class="col-12 col-sm-6 col-md-6 col-lg-6">
-                <p class="text-center quemsomos">
-                  <img src="img/whats.png" class="img-responsive centralizacao">
-                  <b>Serviço:</b> Aula Whatsapp Starter 2h <br/>
-                  <b>Preço:</b> R$ 25,00 <br/><br/>
-                  <button id="prchsandroid">Comprar</button>
-                </p>
-            </div>
-
-            <div class="col-12 col-sm-6 col-md-6 col-lg-6">
-                <p class="text-center quemsomos">
-                  <img src="img/instagram.png" class="img-responsive centralizacao">
-                  <b>Serviço:</b> Aula Instagram Starter 2h <br/>
-                  <b>Preço:</b> R$ 25,00 <br/><br/>
-                  <button id="prchsandroid">Comprar</button>
-                </p>
+            <div class="col-12 col-sm-12 col-md-3 col-lg-3">
+              <div class="panel panel-default">
+                <div class="panel-body">
+                  <a href="#">Outros Usuários</a>
+                </div>
+              </div>
             </div>
           </div>
-
     </div>
     
     <br><br><br>
