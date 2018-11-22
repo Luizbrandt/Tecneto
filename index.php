@@ -106,9 +106,62 @@
                   <br/>
                   <label>E-mail:</label>
                   <?=$_SESSION['email']?>
+                  <br/>
+                  <label>Saldo:</label>
+                  <?=$_SESSION['saldo']?>
                 </p>
             </div>
           </div>
+
+          <div class="row">
+            <div class="col-12 col-sm-4 col-md-4 col-lg-4">
+                <p class="text-center quemsomos">
+                  <img src="img/android.png" class="img-responsive centralizacao">
+                  <b>Serviço:</b> Aula Android Starter 2h <br/>
+                  <b>Preço:</b> R$ 25,00 <br/><br/>
+                  <button id="prchsandroid">Comprar</button>
+                </p>
+            </div>
+
+            <div class="col-12 col-sm-4 col-md-4 col-lg-4">
+                <p class="text-center quemsomos">
+                  <img src="img/netflix.png" class="img-responsive centralizacao">
+                  <b>Serviço:</b> Aula Netflix Starter 2h <br/>
+                  <b>Preço:</b> R$ 25,00 <br/><br/>
+                  <button id="prchsandroid">Comprar</button>
+                </p>
+            </div>
+
+            <div class="col-12 col-sm-4 col-md-4 col-lg-4">
+                <p class="text-center quemsomos">
+                  <img src="img/spotify.png" class="img-responsive centralizacao">
+                  <b>Serviço:</b> Aula Spotify Starter 2h <br/>
+                  <b>Preço:</b> R$ 25,00 <br/><br/>
+                  <button id="prchsandroid">Comprar</button>
+                </p>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-12 col-sm-6 col-md-6 col-lg-6">
+                <p class="text-center quemsomos">
+                  <img src="img/whats.png" class="img-responsive centralizacao">
+                  <b>Serviço:</b> Aula Whatsapp Starter 2h <br/>
+                  <b>Preço:</b> R$ 25,00 <br/><br/>
+                  <button id="prchsandroid">Comprar</button>
+                </p>
+            </div>
+
+            <div class="col-12 col-sm-6 col-md-6 col-lg-6">
+                <p class="text-center quemsomos">
+                  <img src="img/instagram.png" class="img-responsive centralizacao">
+                  <b>Serviço:</b> Aula Instagram Starter 2h <br/>
+                  <b>Preço:</b> R$ 25,00 <br/><br/>
+                  <button id="prchsandroid">Comprar</button>
+                </p>
+            </div>
+          </div>
+
     </div>
     
     <br><br><br>

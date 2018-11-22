@@ -21,6 +21,7 @@
 		if(isset($dados_usuario['usuario'])){
 			$_SESSION['usuario'] = $dados_usuario['usuario'];
 			$_SESSION['email'] = $dados_usuario['email'];
+			$_SESSION['saldo'] = $dados_usuario['saldo'];
 			header('Location: index.php');
 		} else {
 			header('location: login.php?erro=1');
