@@ -179,7 +179,7 @@
             <div class="col-12 col-sm-12 col-md-3 col-lg-3">
               <div class="panel panel-default">
                 <div class="panel-body">
-                  <a href="#">Outros Usuários</a>
+                  <a href="procurar_pessoas.php">Outros Usuários</a>
                 </div>
               </div>
             </div>
