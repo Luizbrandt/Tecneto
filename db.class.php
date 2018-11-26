@@ -5,15 +5,15 @@ class db {
 	//private $host = 'localhost';
 	private $host = 'localhost';
 	//usuario
-	//private $usuario = '1361824';
-	private $usuario = 'root';
+	private $usuario = '1361824';
+	//private $usuario = 'root';
 	//senha
-	//private $senha = 'Micaefeldspato1';
-	private $senha = '';
+	private $senha = 'Micaefeldspato1';
+	//private $senha = '';
 
 	//banco de dados
-	//private $database ='1361824';
-	private $database ='tecneto';
+	private $database ='1361824';
+	//private $database ='tecneto';
 
 
 	//função de conexão

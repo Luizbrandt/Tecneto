@@ -65,7 +65,7 @@
                   //Limpando o campo de postagem após requisição bem sucedida
                   $('#texto_post').val('');
                   //Confirmação de requisição bem sucedida por alert
-                  alert ('Postagem incluída com sucesso! :)');
+                  atualizaPost();
                 }
               });
           }
