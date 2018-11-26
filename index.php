@@ -2,6 +2,8 @@
 
   session_start();
 
+  //$erro = isset($_GET['erro']) ? $_GET['erro'] : 0;
+
   if(!isset($_SESSION['usuario'])){
     header('Location: home.php?erro=1');
   }
@@ -50,33 +52,35 @@
         })
 
         $('#btn_post').click(function(){
-
           if($('#texto_post').val().length > 0){
-            
-            //a função 'ajax' permite fazer a requisição dos dados do nosso input sem que haja um 'refresh' na tela
-            //já a função serialize permite a requisição para formulários inteiros por meio de um Json, o que facilita muito quando trabalhamos com formulários muito grandes (grande quantidade de campos)
-            //recuperação de dados de formulário para submissão via ajax
-            $.ajax({
-              url: 'inclui_post.php',
-              method: 'post',
-              data: $('#form_post').serialize(),
-              success: function(data) {
-                $('#texto_post').val(''); //Limpa o campo de post após a postagem
-                alert('Post concluído com sucesso! :)');
-              }
-            })
-
+              //A função ajax do JQuerry utiliza um Json como parâmetro de comunicação
+              $.ajax({
+                //url que direciona a ação
+                url: 'incluipost.php',
+                //o que executar em caso de sucesso
+                method: 'post',
+                //dados passados ao Json, no formato similar aos maps, contendo chave e valor. Neste caso, nossa chave será o id do campo de input, e recuperamos o valor entrado através da função seletora do JQuerry '$.('#seu_id').val()'. Uma alternativa é a função serialize, que cria Jsons com base nos formulários, criando chaves com os ids dos campos e retornando os valores de entrada
+                data: $('#form_post').serialize(),
+                success: function (data) {
+                  //Limpando o campo de postagem após requisição bem sucedida
+                  $('#texto_post').val('');
+                  //Confirmação de requisição bem sucedida por alert
+                  alert ('Postagem incluída com sucesso! :)');
+                }
+              });
           }
         });
 
+        //Função capaz de atualizar a 'div' de postagens no momento que a página for atualizada
         function atualizaPost(){
+          //carrega posts
           $.ajax({
             url: 'get_post.php',
-            success: function(data){
-              //JavaScript - função 'html' - semelhante (quase igual) à inner no JavaScript
+            success: function(data) {
+              //passando os parâmetros de retorno de forma semelhante ao inner html
               $('#posts').html(data);
             }
-          });
+          })
         }
 
         atualizaPost();
@@ -156,7 +160,7 @@
               <div class="panel panel-default">
                 <div class="panel-body">
                   <form id="form_post" class="input-group">
-                    <input type="text" id="texto_post" name="texto_post" class="form-control" placeholder="Digite aqui! :)" maxlength="140">
+                    <input type="text" name="texto_post" id="texto_post" class="form-control" placeholder="Digite aqui! :)" maxlength="140">
                     <span class="input-group-btn">
                       <button class="btn btn-default" id="btn_post" type="button">Post</button>
                     </span>
@@ -165,10 +169,10 @@
               </div>
 
 
+              <!--Timeline-->
               <div id="posts" class="list-group">
                 
               </div>
-            
 
             </div>
 

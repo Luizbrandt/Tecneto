@@ -89,11 +89,6 @@
       </div>
     </div>
 
-    <br><br><br>
-    <br><br><br>
-    <br><br><br>
-    <br><br><br>
-
     <!--Rodapé-->
     <footer>
       <div class="container">

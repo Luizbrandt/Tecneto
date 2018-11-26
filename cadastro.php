@@ -103,6 +103,7 @@
               </div>
               <div class="col-12 col-sm-12 col-md-6 col-lg-6 ">
                 <h3>Cadastre-se</h3>
+                <!--Os atributos methos e action definem qual medida deve ser tomada na atibidade de receber as informações do formulário. Neste caso, o método de recuperação de dados do PHP utilizado foi o 'post', e o script contendo as tratativas está em 'registra-usuario.php'.-->
                 <form method="post" action="registra-usuario.php" id="formCadastro">
                           <div class="form-group">
                             <label for="nome">Nome:</label>

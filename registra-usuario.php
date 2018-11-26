@@ -2,6 +2,7 @@
 
 	require_once('db.class.php');	
 
+	//Superglobais - arrays associativos, recupera o valor nos dados índices de entrada
 	$usuario = $_POST['nome'];
 	$email = $_POST['email'];
 	$senha = md5($_POST['senha']);
