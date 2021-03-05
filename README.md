@@ -16,3 +16,7 @@ Tecneto was my first website developed (2017), materializing the idea of creatin
 - JavaScript
 - Bootstrap
 - PHP
+
+<p align="center">
+<img align="center" src="./img/overview.png">
+</p>
